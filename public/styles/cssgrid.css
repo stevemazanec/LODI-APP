@@ -1,0 +1,533 @@
+body {
+    background-image: url('/image/home.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: unset;
+}
+
+.Name {
+    font-family: 'Chango', cursive;
+    margin-left: 65px;
+    margin-top: 1px;
+    font-size: 25px;
+}
+
+.L {
+    color: orangered;
+}
+
+.O {
+    color: darkslategray;
+}
+
+.D {
+    color: orangered;
+}
+
+.I {
+    color: darkslategray;
+}
+
+#window {
+    top: 2%;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(255, 255, 255);
+    height: 100px;
+    width: 100px;
+    left: 15%;
+    margin-left: 7%;
+    margin-top: 14%;
+    position: absolute;
+    padding: 0%;
+}
+
+#window1 {
+    top: 1%;
+    left: 33.5%;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(255, 255, 255);
+    height: 99px;
+    width: 173px;
+    margin-left: 10%;
+    margin-top: 14%;
+    position: absolute;
+    padding: 0%;
+}
+
+.zoom {
+    padding: 50px;
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+#window2 {
+    top: 4%;
+    right: 21.5%;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(255, 255, 255);
+    height: 104px;
+    width: 100px;
+    margin-left: 0%;
+    margin-top: 12.5%;
+    position: absolute;
+    padding: 0%;
+}
+
+#roof1 {
+    left: 2%;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(100, 100, 100);
+    height: 11%;
+    width: 77%;
+    margin-left: 10%;
+    margin-top: 19.5%;
+    position: absolute;
+    padding: 0%;
+}
+
+#roof2 {
+    left: 8.5%;
+    /* top: 38%; */
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(100, 100, 100);
+    height: 51px;
+    width: 6%;
+    margin-left: 359px;
+    margin-top: 16%;
+    position: absolute;
+    padding: 0%
+}
+
+#roof3 {
+    left: 33px;
+    top: 10px;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(100, 100, 100);
+    height: 64px;
+    width: 113px;
+    margin-left: 771px;
+    margin-top: 228px;
+    position: absolute;
+    padding: 0%;
+}
+
+#land {
+    padding: 0%;
+    height: 176px;
+    width: 112px;
+    margin-left: 0.4%;
+    margin-top: 369px;
+    position: absolute;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(255, 215, 215);
+    left: 1.5%;
+}
+
+#painter1 {
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(255, 184, 126);
+    padding: 0%;
+    height: 99px;
+    width: 52px;
+    margin-left: 19.4%;
+    margin-top: 28.2%;
+    position: absolute;
+}
+
+/* .Name {
+    font-family: 'Chango', cursive;
+    margin-left: 65px;
+    margin-top: -7px;
+    font-size: 72px;
+}
+
+.L {
+    color: orangered;
+}
+
+.O {
+    color: darkslategray;
+}
+
+.D {
+    color: orangered;
+}
+
+.I {
+    color: darkslategray;
+}
+
+#window {
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(255, 255, 255);
+    height: 100px;
+    width: 100px;
+    left: 289px;
+    margin-left: 14px;
+    margin-top: 190px;
+    position: absolute;
+    padding: 0%;
+}
+
+#window1 {
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(255, 255, 255);
+    height: 104px;
+    width: 166px;
+    margin-left: 593px;
+    margin-top: 56px;
+    position: absolute;
+    padding: 0%;
+}
+
+#window2 {
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(255, 255, 255);
+    height: 100px;
+    width: 100px;
+    margin-left: 512px;
+    margin-top: 55px;
+    position: absolute;
+    padding: 0%;
+}
+
+#roof1 {
+    left: 10px;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(100, 100, 100);
+    height: 57px;
+    width: 1050px;
+    margin-left: 165px;
+    margin-top: 174px;
+    position: absolute;
+    padding: 0%;
+}
+
+#roof2 {
+    left: 111px;
+    top: 214px;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(100, 100, 100);
+    height: 65px;
+    width: 101px;
+    margin-left: 359px;
+    margin-top: 32px;
+    position: absolute;
+    padding: 0%;
+}
+
+#roof3 {
+    left: 33px;
+    top: 10px;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(100, 100, 100);
+    height: 64px;
+    width: 113px;
+    margin-left: 771px;
+    margin-top: 228px;
+    position: absolute;
+    padding: 0%;
+}
+
+#land {
+    padding: 0%;
+    height: 176px;
+    width: 112px;
+    margin-left: 16px;
+    margin-top: 134px;
+    position: absolute;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(255, 215, 215);
+}
+
+#painter1 {
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(255, 184, 126);
+    padding: 0%;
+    height: 99px;
+    width: 51px;
+    margin-left: 27.6%;
+    margin-top: 1.5%;
+    position: absolute;
+} */
+
+/* @media only screen and (max-width:768px) {
+    #window {
+        height: 5.5%;
+        left: 1%;
+        width: 7%;
+        margin-left: 21%;
+        margin-top: 13.5%;
+        position: absolute;
+    }
+    #window1 {
+        left: 14%;
+        height: 5.7%;
+        width: 12%;
+        margin-left: 30%;
+        margin-top: 5%;
+    }
+    #window2 {
+        height: 100px;
+        width: 100px;
+        margin-left: 512px;
+        margin-top: 55px;
+    }
+    .Name {
+        margin-left: 33px;
+        margin-top: -7px;
+        font-size: 37px;
+    }
+    #roof1 {
+        left: 3.2%;
+        height: 3.5%;
+        width: 78%;
+        margin-left: 8%;
+        margin-top: 13%;
+    }
+    #roof2 {
+        left: 27.5%;
+        top: 11.3%;
+        height: 3%;
+        width: 8.2%;
+        margin-left: 6%;
+        margin-top: 4%;
+    }
+    #roof3 {
+        right: 7%;
+        top: 6%;
+        height: 3%;
+        width: 9%;
+        margin-left: 54%;
+        margin-top: 10%;
+    }
+    #painter1 {
+        height: 6%;
+        width: 4%;
+        margin-left: 27%;
+        margin-top: 4.5%;
+    }
+    #land {
+        height: 9%;
+        width: 9%;
+        margin-left: 0%;
+        margin-top: 12%;
+    }
+}
+
+@media only screen and (max-width:940px) {
+    #window {
+        height: 5.5%;
+        left: 1%;
+        width: 7%;
+        margin-left: 21%;
+        margin-top: 13.5%;
+        position: absolute;
+    }
+    #window1 {
+        left: 14%;
+        height: 5.7%;
+        width: 12%;
+        margin-left: 30%;
+        margin-top: 5%;
+    }
+    #window2 {
+        height: 5.7%;
+        width: 7%;
+        /* margin-left: 10%; */
+
+/* margin-top: 4.5%;
+        right: 22%;
+    }
+    Name {
+        margin-left: 33px;
+        margin-top: -7px;
+        font-size: 37px;
+    }
+    #roof1 {
+        left: 3.2%;
+        height: 3.5%;
+        width: 78%;
+        margin-left: 8%;
+        margin-top: 13%;
+    }
+    #roof2 {
+        left: 27.5%;
+        top: 11.3%;
+        height: 3%;
+        width: 8.2%;
+        margin-left: 6%;
+        margin-top: 4%;
+    }
+    #roof3 {
+        right: 7%;
+        top: 6%;
+        height: 3%;
+        width: 9%;
+        margin-left: 54%;
+        margin-top: 10%;
+    }
+    #painter1 {
+        height: 6%;
+        width: 4%;
+        margin-left: 27%;
+        margin-top: 4.5%;
+    }
+    #land {
+        height: 9%;
+        width: 9%;
+        margin-left: 0%;
+        margin-top: 12%;
+    } */
+
+/* }  */
+
+.navbar-expand-lg .dropdown-menu {
+    width: 50%;
+    background-color: transparent;
+    font-family: 'Chango', cursive;
+}
+
+.nav-item {
+    font-family: 'Chango', cursive;
+}
+
+.material-icons {
+    color: orangered;
+}
+
+#navHome {
+    color: darkslategray
+}
+
+.zoom {
+    padding: 50px;
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.3);
+    /* IE 9 */
+    -webkit-transform: scale(1.3);
+    /* Safari 3-8 */
+    transform: scale(1.3);
+}
+
+.zoom1 {
+    padding: 50px;
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.zoom1:hover {
+    -ms-transform: scale(1.05);
+    /* IE 9 */
+    -webkit-transform: scale(1.05);
+    /* Safari 3-8 */
+    transform: scale(1.05);
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+} */
+
+/* ul {
+    grid-column: 6;
+    grid-row: 1;
+} */
+
+/*Create a horizontal list with spacing*/
+
+/* 
+li {
+    display: inline;
+    float: right;
+    margin-right: 1px;
+} */
+
+/*Style for menu links*/
+
+/* li a {
+    font-size: 10px;
+    font-family: 'Chango', cursive;
+    border-radius: 50%;
+    display: block;
+    min-width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: orangered;
+    background: darkslategray;
+    text-decoration: none;
+    z-index: 2;
+} */
+
+/*Hover state for top level links*/
+
+/* li:hover a {
+    background: orangered;
+} */
+
+/*Style for dropdown links*/
+
+/* li:hover ul a {
+    font-family: 'Chango', cursive;
+    background: orangered;
+    color: #2f3036;
+    height: 50px;
+    line-height: 50px;
+    z-index: 2;
+} */
+
+/*Hover state for dropdown links*/
+
+/* 
+li:hover ul a:hover {
+    font-family: 'Chango', cursive;
+    background: orangered;
+    color: darkslategray;
+    z-index: 2;
+} */
+
+/*Hide dropdown links until they are needed*/
+
+/* 
+li ul {
+    display: none;
+    z-index: 2;
+}
+
+/*Make dropdown links vertical*/
+
+/* li ul li {
+    display: -webkit-inline-box;
+    float: right;
+    z-index: 2;
+} */
+
+/*Prevent text wrapping*/
+
+/* li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0px;
+    z-index: 2;
+} */
+
+/*Display the dropdown on hover*/
+
+/*ul li a:hover+.hidden,
+.hidden:hover {
+    display: block;
+    z-index: 2;
+} */

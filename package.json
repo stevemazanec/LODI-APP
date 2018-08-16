@@ -15,7 +15,10 @@
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
+    "geocoder": "^0.2.3",
+    "jquery-validation": "^1.17.0",
     "mysql2": "^1.5.3",
+    "node-geocoder": "^3.22.0",
     "sequelize": "^4.38.0"
   },
   "devDependencies": {

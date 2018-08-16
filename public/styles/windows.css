@@ -1,0 +1,90 @@
+.headshots {
+    height: 50px;
+    width: 50px;
+}
+body {
+    background-image: url('/image/windowinstaller7.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#mapid {
+    height: 100%;
+    width: 100%;
+}
+
+.jumbotron {
+    margin-left: 18%;
+    height: 250px;
+    width: 77%;
+    padding: 0px;
+}
+
+.row {
+    margin-left: 12%;
+}
+
+.navbar-expand-lg .dropdown-menu {
+    width: 50%;
+    margin-left: 50%;
+    background-color: transparent;
+    font-family: 'Chango', cursive;
+}
+
+.dropdown-menu {
+    background-color: darkslategray;
+    color: orangered;
+}
+
+.nav-item {
+    font-family: 'Chango', cursive;
+}
+
+.Name {
+    font-family: 'Chango', cursive;
+    margin-left: 65px;
+    margin-top: -7px;
+    font-size: 50px;
+}
+
+.greyL {
+    color: darkslategray;
+}
+
+.orangeL {
+    color: orangered;
+}
+
+.L {
+    color: orangered;
+}
+
+.O {
+    color: darkslategray;
+}
+
+.D {
+    color: orangered;
+}
+
+.I {
+    color: darkslategray;
+}
+
+.container {
+    margin: 0%;
+    padding: 0%;
+}
+
+.WI {
+    font-size: 25px;
+    font-family: 'Chango', cursive;
+    margin-left: 37%;
+}
+
+.table {
+    font-family: 'Chango', cursive;
+    width: 100%;
+    margin-left: 15%;
+}

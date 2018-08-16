@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="reset.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/styles/cssgrid.css">
+    <link rel="stylesheet" type="text/css" href="/styles/review.css">
 </head>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -38,7 +38,7 @@
                                 <a class="nav-link" href="/addcontractor">Add Yourself</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/reviews">Add Review</a>
+                                <a class="nav-link" href="#">Add Review</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -69,46 +69,23 @@
             </div>
             </nav>
         </div>
+
         {{!--
         <button id="add-review" class="btn btn-primary float-left">Add Rating</button> --}}
-        <a href="/windows">
-            <img class="zoom" id="window" src="/image/window2.jpg">
-        </a>
-        <a href="/windows">
-            <img class="zoom" id="window1" src="/image/window.jpg">
-        </a>
-        <a href="/windows">
-            <img class="zoom" id="window2" src="/image/window2.jpg">
-        </a>
-        <a href="/roofing">
-            <img class="zoom1" id="roof1" src="/image/roof2.jpg">
-        </a>
-        <a href="/landscaping">
-            <img class="zoom1" id="land" src="/image/land.jpg">
-        </a>
-        <a href="/roofing">
-            <img class="zoom" id="roof2" src="/image/roof3.jpg">
-        </a>
-        <a href="/roofing">
-            <img class="zoom" id="roof3" src="/image/roof4.jpg">
-        </a>
-        <a href="/painting">
-            <img class="zoom" id="painter1" src="/image/paint.jpg">
-        </a>
 
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="review-modal" role="dialog">
-        <div class="modal-dialog">
+    <div>
+        <div>
 
             <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" align="left">Add A Review</h4>
+            <div>
+                <div>
+                    <h4 align="left">Add A Review</h4>
 
 
                 </div>
-                <div class="modal-body">
+                <div>
                     <!-- name and image will dynamically be added after "post"-->
                     <div class="form-group">
 
@@ -160,7 +137,7 @@
 
 
                     <form method="post">
-                        <div class="modal-footer">
+                        <div class="footer">
                             <button id="cancel-review" type="button" class="btn btn-default btn-danger" data-dismiss="modal">Cancel</button>
                             <button id="submit-review" type="button" class="btn btn-default btn-success">Submit Review</button>
                         </div>
@@ -173,6 +150,6 @@
 
 </body>
 
-<script src="/js/index.js "></script>
+<script src="/js/review.js "></script>
 
 </html>

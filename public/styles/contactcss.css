@@ -1,0 +1,45 @@
+body {
+    background-image: url('/image/mainback.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.Name {
+    font-family: 'Chango', cursive;
+    margin-left: 65px;
+    margin-top: -7px;
+    font-size: 72px;
+}
+
+.L {
+    color: orangered;
+}
+
+.O {
+    color: darkslategray;
+}
+
+.D {
+    color: orangered;
+}
+
+.I {
+    color: darkslategray;
+}
+
+.navbar-expand-lg .dropdown-menu {
+    width: 50%;
+    background-color: transparent;
+    font-family: 'Chango', cursive;
+}
+
+.nav-item {
+    font-family: 'Chango', cursive;
+}
+
+#submit {
+    background-color: orangered;
+    color: darkslategray;
+    font-family: 'Chango', cursive;
+}
