@@ -5,20 +5,26 @@ module.exports = function (app) {
   app.get("/", function (req, res) {
     res.render("index", {
       //Updates the title in the header section
-      pagetitle: "Home"
+      pagetitle: "Home",
+      css: "cssgrid.css",
+      js: "index.js"
     });
   });
 
   app.get("/contactus", function (req, res) {
     res.render("contactus", {
-      pagetitle: "Contact Us"
+      pagetitle: "Contact Us",
+      css: "contactcss.css",
+      js: "contact.js"
     });
   });
 
   //Load page to add a new contractor to the database
   app.get("/addcontractor", function (req, res) {
     res.render("contractor", {
-      pagetitle: "Add Contractor"
+      pagetitle: "Add Contractor",
+      css: "contractor.css",
+      js: "contractor.js"
     });
   });
 
@@ -26,6 +32,7 @@ module.exports = function (app) {
     db.Worker.findAll({}).then(function (dbWorkers) {
       res.render("reviews", {
         pagetitle: "Reviews",
+        js: "review.js",
         workers: dbWorkers
       });
     });
@@ -41,6 +48,8 @@ module.exports = function (app) {
     }).then(function (dbWorkers) {
       res.render("roofing", {
         pagetitle: "Roofers",
+        css: "roofing.css",
+        js: "roofing.js",
         roofers: dbWorkers
       });
     });
@@ -54,6 +63,8 @@ module.exports = function (app) {
     }).then(function (dbWorkers) {
       res.render("windows", {
         pagetitle: "Windows",
+        css: "windows.css",
+        js: "windows.js",
         windows: dbWorkers
       });
     });
@@ -67,6 +78,8 @@ module.exports = function (app) {
     }).then(function (dbWorkers) {
       res.render("plumbing", {
         pagetitle: "Plumbers",
+        css: "plumbing.css",
+        js: "plumbing.js",
         plumbers: dbWorkers
       });
     });
@@ -80,6 +93,8 @@ module.exports = function (app) {
     }).then(function (dbWorkers) {
       res.render("painting", {
         pagetitle: "Painters",
+        css: "painting.css",
+        js: "painting.js",
         painters: dbWorkers
       });
     });
@@ -93,6 +108,8 @@ module.exports = function (app) {
     }).then(function (dbWorkers) {
       res.render("landscaping", {
         pagetitle: "Landscapers",
+        css: "landscaping.css",
+        js: "landscaping.js",
         landscapers: dbWorkers
       });
     });
@@ -106,6 +123,8 @@ module.exports = function (app) {
     }).then(function (dbWorkers) {
       res.render("flooring", {
         pagetitle: "Flooring",
+        css: "flooring.css",
+        js: "flooring.js",
         floorers: dbWorkers
       });
     });

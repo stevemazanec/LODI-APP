@@ -56,20 +56,20 @@ $(document).ready(function () {
         var currentId = $(this).attr("data-id");
 
         // display the modal (unhide)
-        $("#roofing-review-modal").modal("toggle");
+        $("#review-modal").modal("toggle");
 
 
         // display all reviews
         API.getReviews(currentId).then(function (result) {
-            $("#roofer-modal-title").text("All reviews for " + currentname);
-            $("#roofer-review-div").empty();
+            $("#modal-title").text("All reviews for " + currentname);
+            $("#review-div").empty();
 
             for (var i = 0; i < result.length; i++) {
                 var currentDate = result[i].createdAt.substring(5, 10) + "-" + result[i].createdAt.substring(0, 4);
-                $("#roofer-review-div").append("<p>Rating: " + result[i].rating + "</p>");
-                $("#roofer-review-div").append("<p>Date: " + currentDate + "</p>");
-                $("#roofer-review-div").append("<p>Comment: " + result[i].comment + "</p>");
-                $("#roofer-review-div").append("<p>--------------------------------------</p>");
+                $("#review-div").append("<p>Rating: " + result[i].rating + "</p>");
+                $("#review-div").append("<p>Date: " + currentDate + "</p>");
+                $("#review-div").append("<p>Comment: " + result[i].comment + "</p>");
+                $("#review-div").append("<p>--------------------------------------</p>");
             }
         });
     };

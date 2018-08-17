@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <link rel="icon" href="https://i.pinimg.com/564x/fe/8a/da/fe8ada4506e556737c4413a614b13033--bh-logo-buddhas-hand.jpg">
     <link rel="stylesheet" href="reset.css">
@@ -14,64 +11,7 @@
 <body>
     <div class="container">
 
-        <div class="row">
-            <div class="col-sm">
-
-
-                <nav class="navbar-expand-lg navbar-light ">
-
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" id="navHome" href="#">Home
-                                    <span class="sr-only">(current)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/contactus">Contact Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/addcontractor">Add Yourself</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Add Review</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    Categories
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="/plumbing">Plumbing</a>
-                                    <a class="dropdown-item" href="/flooring">Flooring</a>
-                                    <a class="dropdown-item" href="/landscaping">Landscaping</a>
-                                    <a class="dropdown-item" href="/windows">Windows</a>
-                                    <a class="dropdown-item" href="/painting">Painting</a>
-                                    <a class="dropdown-item" href="/roofing">Roofing</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <h1 class="Name">
-                            <strong>
-                                <em>
-                                    <span class="L">L</span>
-                                    <span class="O">O</span>
-                                    <span class="D">D</span>
-                                    <span class="I">I</span>
-                                </em>
-                            </strong>
-                        </h1>
-                    </div>
-            </div>
-            </nav>
-        </div>
-
-        {{!--
-        <button id="add-review" class="btn btn-primary float-left">Add Rating</button> --}}
+        {{> navbar }}
 
     </div>
     <!-- Modal -->
@@ -149,7 +89,3 @@
     </div>
 
 </body>
-
-<script src="/js/review.js "></script>
-
-</html>

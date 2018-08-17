@@ -37,6 +37,18 @@ $(document).ready(function () {
 
     addMarkers();
 
+    //Makes it so the user can sort workers according to name, hourly rate, or rating, but not by picture or phone number
+    $(".table").tablesorter({
+        headers: {
+            1: {
+                sorter: false
+            },
+            2: {
+                sorter: false
+            }
+        }
+    });
+
     //The API object contains methods for requests made
     var API = {
 
@@ -56,35 +68,25 @@ $(document).ready(function () {
         var currentId = $(this).attr("data-id");
 
         // display the modal (unhide)
-        $("#floorer-review-modal").modal("toggle");
+        $("#review-modal").modal("toggle");
 
 
         // display all reviews
         API.getReviews(currentId).then(function (result) {
-            $("#floorer-modal-title").text("All reviews for " + currentname);
-            $("#floorer-review-div").empty();
+            $("#modal-title").text("All reviews for " + currentname);
+            $("#review-div").empty();
 
             for (var i = 0; i < result.length; i++) {
                 var currentDate = result[i].createdAt.substring(5, 10) + "-" + result[i].createdAt.substring(0, 4);
-                $("#floorer-review-div").append("<p>Rating: " + result[i].rating + "</p>");
-                $("#floorer-review-div").append("<p>Date: " + currentDate + "</p>");
-                $("#floorer-review-div").append("<p>Comment: " + result[i].comment + "</p>");
-                $("#floorer-review-div").append("<p>--------------------------------------</p>");
+                $("#review-div").append("<p>Rating: " + result[i].rating + "</p>");
+                $("#review-div").append("<p>Date: " + currentDate + "</p>");
+                $("#review-div").append("<p>Comment: " + result[i].comment + "</p>");
+                $("#review-div").append("<p>--------------------------------------</p>");
             }
         });
     };
 
-    //Makes it so the user can sort workers according to name, hourly rate, or rating, but not by picture or phone number
-    $(".table").tablesorter({
-        headers: {
-            1: {
-                sorter: false
-            },
-            2: {
-                sorter: false
-            }
-        }
-    });
+
     // display all reviews for the selected worker
     $(".worker-row").on("click", handleDisplayReviews);
 });

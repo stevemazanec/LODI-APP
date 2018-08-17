@@ -68,20 +68,20 @@ $(document).ready(function () {
         var currentId = $(this).attr("data-id");
 
         // display the modal (unhide)
-        $("#window-review-modal").modal("toggle");
+        $("#review-modal").modal("toggle");
 
 
         // display all reviews
         API.getReviews(currentId).then(function (result) {
-            $("#window-modal-title").text("All reviews for " + currentname);
-            $("#window-review-div").empty();
+            $("#modal-title").text("All reviews for " + currentname);
+            $("#review-div").empty();
 
             for (var i = 0; i < result.length; i++) {
                 var currentDate = result[i].createdAt.substring(5, 10) + "-" + result[i].createdAt.substring(0, 4);
-                $("#window-review-div").append("<p>Rating: " + result[i].rating + "</p>");
-                $("#window-review-div").append("<p>Date: " + currentDate + "</p>");
-                $("#window-review-div").append("<p>Comment: " + result[i].comment + "</p>");
-                $("#window-review-div").append("<p>--------------------------------------</p>");
+                $("#review-div").append("<p>Rating: " + result[i].rating + "</p>");
+                $("#review-div").append("<p>Date: " + currentDate + "</p>");
+                $("#review-div").append("<p>Comment: " + result[i].comment + "</p>");
+                $("#review-div").append("<p>--------------------------------------</p>");
             }
         });
     };
