@@ -1,136 +1,10 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
-<link rel="stylesheet" href="/styles/contractor.css">
+
 <div id="home">
   <div class="container">
-    <div class="row">
-      <div class="col-sm">
+    {{> navbar }}
 
-
-        <nav class="navbar-expand-lg navbar-light ">
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" id="navHome" href="/">Home
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/contactus">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/addcontractor">Add Yourself</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/reviews">Add Review</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">
-                  Categories
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="/plumbing">Plumbing</a>
-                  <a class="dropdown-item" href="/flooring">Flooring</a>
-                  <a class="dropdown-item" href="/landscaping">Landscaping</a>
-                  <a class="dropdown-item" href="/windows">Windows</a>
-                  <a class="dropdown-item" href="/painting">Painting</a>
-                  <a class="dropdown-item" href="/roofing">Roofing</a>
-                </div>
-              </li>
-            </ul>
-            <h1 class="Name">
-              <strong>
-                <em>
-                  <span class="L">L</span>
-                  <span class="O">O</span>
-                  <span class="D">D</span>
-                  <span class="I">I</span>
-                </em>
-              </strong>
-            </h1>
-          </div>
-      </div>
-      </nav>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="review-modal" role="dialog">
-      <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" align="left">Add A Review</h4>
-
-
-          </div>
-          <div class="modal-body">
-            <!-- name and image will dynamically be added after "post"-->
-            <div class="form-group">
-
-              <label for="contractor-dropdown">Contractor Name</label>
-              <!-- dropdown dynamically created from contents of database -->
-              <select class="form-control" id="contractor-dropdown" data-placeholder="">
-
-              </select>
-
-            </div>
-
-
-            <!-- user adds comments here -->
-            <div class="form-group">
-              <label for="comment">Enter your Review:</label>
-              <textarea class="form-control" rows="3" id="comment"></textarea>
-            </div>
-
-            <!-- select rating from 1-5 -->
-            <div class="form-group rating-radio" id="rating-radioxx">
-              <label>Contractor Rating</label>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="optradio" value="1"> 1 (low recommendation)</label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="optradio" value="2"> 2 </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="optradio" value="3"> 3 </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="optradio" value="4"> 4 </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="optradio" value="5"> 5 (high recommendation)</label>
-              </div>
-            </div>
-
-            <!-- add email to contact user -->
-            <div class="form-group">
-              <label for="email-text">Email Address</label>
-              <input type="text" id="review-email" class="form-control" aria-describedby="email-text" placeholder="-- Your email address --">
-            </div>
-
-
-            <form method="post">
-              <div class="modal-footer">
-                <button id="cancel-review" type="button" class="btn btn-default btn-danger" data-dismiss="modal">Cancel</button>
-                <button id="submit-review" type="button" class="btn btn-default btn-success">Submit Review</button>
-              </div>
-            </form>
-
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="row">
       <div class="col-8 offset-2">
@@ -191,5 +65,3 @@
     </div>
   </div>
 </div>
-
-<script src="/js/contractor.js"></script>
