@@ -1,17 +1,30 @@
+.errors {
+    color: red
+}
+
 body {
-    background-image: url('/image/mainback.jpg');
+    background-image: url('/image/home.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
+form {
+    margin-left: 25%;
+    width: 100%;
+}
+
 .row {
-    margin-left: 12%;
+    margin-left: 15%;
+}
+
+#navrow {
+    margin-left: 10%;
 }
 
 .navbar-expand-lg .dropdown-menu {
     width: 50%;
-    margin-left: 50%;
+    margin-left: 75%;
     background-color: orangered;
     color: darkslategray;
     font-family: 'Chango', cursive;
@@ -23,15 +36,14 @@ body {
 }
 
 .nav-item {
-    font-weight: normal;
     font-family: 'Chango', cursive;
 }
 
 .Name {
     font-family: 'Chango', cursive;
     margin-left: 65px;
-    margin-top: -7px;
-    font-size: 65px;
+    margin-top: 0px;
+    font-size: 29px;
 }
 
 #submit {
@@ -72,7 +84,7 @@ body {
 .WI {
     font-size: 25px;
     font-family: 'Chango', cursive;
-    margin-left: 27%;
+    margin-left: 40%;
 }
 
 label {
@@ -81,6 +93,19 @@ label {
     font-weight: bolder;
 }
 
-.errors {
-    color: red
+#cancel-review {
+    background-color: orangered;
+    color: darkslategray;
+    font-family: 'Chango', cursive;
+}
+
+#submit-review {
+    background-color: darkslategray;
+    color: orangered;
+    font-family: 'Chango', cursive;
+}
+
+#reviewop {
+    background-color: aliceblue;
+    border-radius: 2%;
 }

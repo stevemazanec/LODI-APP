@@ -19,6 +19,7 @@
     "jquery-validation": "^1.17.0",
     "mysql2": "^1.5.3",
     "node-geocoder": "^3.22.0",
+    "nodemon": "^1.18.3",
     "sequelize": "^4.38.0"
   },
   "devDependencies": {

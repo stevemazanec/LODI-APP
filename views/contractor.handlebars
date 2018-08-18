@@ -1,28 +1,49 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
-
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous">
 <div id="home">
   <div class="container">
-    {{> navbar }}
-
+    <div class="row" id="navrow">
+      {{> navbar }}
+    </div>
 
     <div class="row">
       <div class="col-8 offset-2">
         <h1>{{msg}}</h1>
-        <h2>Add a Contractor!</h2>
+        <h1 class="WI">
+          <span class="orangeL">A</span>
+          <span class="greyL">d</span>
+          <span class="orangeL">d</span>
+          <span class="greyL">-</span>
+          <span class="orangeL">A</span>
+          <span class="greyL">-</span>
+          <span class="orangeL">C</span>
+          <span class="greyL">o</span>
+          <span class="orangeL">n</span>
+          <span class="greyL">r</span>
+          <span class="orangeL">a</span>
+          <span class="greyL">c</span>
+          <span class="orangeL">t</span>
+          <span class="greyL">o</span>
+          <span class="orangeL">r</span>
+          <span class="greyL">!</span>
+        </h1>
+
         <form id="formid" class="clearfix mb-4">
           <div class="form-group">
-            <label for="worker-text">Worker Name
+            <label for="worker-text" class="orangeL">Worker Name
             </label>
             <input type="text" name="workerName" id="workerName" class="form-control" aria-describedby="example-text" placeholder="Enter Worker Name">
           </div>
           <div class="form-group">
-            <label for="worker-text">Worker Image
+            <label for="worker-text" class="orangeL">Worker Image
             </label>
             <input type="text" name="workerImage" id="workerImage" class="form-control" aria-describedby="example-text" placeholder="Enter A Picture of Yourself (PNG or JPG)">
           </div>
           <div class="dropdown">
-            <label>Worker Specialty</label>
+            <label class="orangeL">Worker Specialty</label>
             <br>
             <button class="btn btn-secondary dropdown-toggle" type="button" id="worker-specialty" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
@@ -40,22 +61,22 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="example-text">Hourly rate
+            <label for="example-text" class="orangeL">Hourly rate
             </label>
             <input type="number" name="hourlyRate" id="hourlyRate" class="form-control" aria-describedby="example-text" placeholder="Enter Hourly Rate">
           </div>
           <div class="form-group">
-            <label for="example-description">Worker Address</label>
+            <label for="example-description" class="orangeL">Worker Address</label>
             <input type="text" class="form-control" name="workerAddress" id="workerAddress" aria-describedby="example-description" placeholder="Enter Your Full Address">
             </textarea>
           </div>
           <div class="form-group">
-            <label for="example-text">Serving Area
+            <label for="example-text" class="orangeL">Serving Area
             </label>
             <input type="number" name="workerDistance" id="workerDistance" class="form-control" aria-describedby="example-text" placeholder="How Many Miles From Home Will You Go For A Customer?">
           </div>
           <div class="form-group">
-            <label for="example-description">Worker Phone Number</label>
+            <label for="example-description" class="orangeL">Worker Phone Number</label>
             <input type="text" class="form-control" name="workerPhone" id="workerPhone" aria-describedby="example-description" placeholder="Enter Your Number">
             </textarea>
           </div>

@@ -66,7 +66,9 @@ $(document).ready(function () {
         event.preventDefault();
         var currentname = $(this).find('td:first').text();
         var currentId = $(this).attr("data-id");
+        var imgSrc = $(this).find('td').eq(1).html();
 
+        $('#my_image').append(imgSrc);
         // display the modal (unhide)
         $("#review-modal").modal("toggle");
 
@@ -74,7 +76,11 @@ $(document).ready(function () {
         // display all reviews
         API.getReviews(currentId).then(function (result) {
             $("#modal-title").text("All reviews for " + currentname);
+           
+ $('#my_image').empty();
+            $('#my_image').append(imgSrc);
             $("#review-div").empty();
+
 
             for (var i = 0; i < result.length; i++) {
                 var currentDate = result[i].createdAt.substring(5, 10) + "-" + result[i].createdAt.substring(0, 4);

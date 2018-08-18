@@ -1,91 +1,109 @@
 <head>
     <link rel="icon" href="https://i.pinimg.com/564x/fe/8a/da/fe8ada4506e556737c4413a614b13033--bh-logo-buddhas-hand.jpg">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/styles/review.css">
+    <link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet"> {{!--
+    <link rel="stylesheet" type="text/css" href="/styles/review.css"> --}}
 </head>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 <body>
     <div class="container">
-
-        {{> navbar }}
-
-    </div>
-    <!-- Modal -->
-    <div>
+        <div class="row" id="navrow">
+            {{> navbar }}
+        </div>
+        <!-- Modal -->
         <div>
+            <div class="row">
 
-            <!-- Modal content-->
-            <div>
-                <div>
-                    <h4 align="left">Add A Review</h4>
+                <!-- Modal content-->
+                <div class="col-8">
+                    <div>
+                        <h1 class="WI">
+                            <span class="orangeL">A</span>
+                            <span class="greyL">d</span>
+                            <span class="orangeL">d</span>
+                            <span class="greyL">-</span>
+                            <span class="orangeL">A</span>
+                            <span class="greyL">-</span>
+                            <span class="orangeL">R</span>
+                            <span class="greyL">e</span>
+                            <span class="orangeL">v</span>
+                            <span class="greyL">i</span>
+                            <span class="orangeL">e</span>
+                            <span class="greyL">w</span>
+
+                        </h1>
 
 
-                </div>
-                <div>
-                    <!-- name and image will dynamically be added after "post"-->
-                    <div class="form-group">
-
-                        <label for="contractor-dropdown">Contractor Name</label>
-                        <!-- dropdown dynamically created from contents of database -->
-                        <select class="form-control" id="contractor-dropdown" data-placeholder="">
-
-                        </select>
 
                     </div>
+                    <form id="formid" class="clearfix mb-4">
+                        <!-- name and image will dynamically be added after "post"-->
+                        <div class="form-group">
+
+                            <label for="contractor-dropdown" class="orangeL">Contractor Name</label>
+                            <!-- dropdown dynamically created from contents of database -->
+                            <select class="form-control" id="contractor-dropdown" data-placeholder="">
+
+                            </select>
+
+                        </div>
 
 
-                    <!-- user adds comments here -->
-                    <div class="form-group">
-                        <label for="comment">Enter your Review:</label>
-                        <textarea class="form-control" rows="3" id="comment"></textarea>
-                    </div>
+                        <!-- user adds comments here -->
+                        <div class="form-group">
+                            <label for="comment" class="orangeL">Enter your Review:</label>
+                            <textarea class="form-control" rows="3" id="comment"></textarea>
+                        </div>
 
-                    <!-- select rating from 1-5 -->
-                    <div class="form-group rating-radio" id="rating-radioxx">
-                        <label>Contractor Rating</label>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optradio" value="1"> 1 (low recommendation)</label>
+                        <!-- select rating from 1-5 -->
+                        <div class="form-group rating-radio" id="rating-radioxx">
+                            <label class="orangeL">Contractor Rating</label>
+                            <div id="reviewop">
+                                <div class="radio">
+                                    <label class="orangeL">
+                                        <input type="radio" name="optradio" value="1"> 1 (low recommendation)</label>
+                                </div>
+                                <div class="radio">
+                                    <label class="orangeL">
+                                        <input type="radio" name="optradio" value="2"> 2 </label>
+                                </div>
+                                <div class="radio">
+                                    <label class="orangeL">
+                                        <input type="radio" name="optradio" value="3"> 3 </label>
+                                </div>
+                                <div class="radio">
+                                    <label class="orangeL">
+                                        <input type="radio" name="optradio" value="4"> 4 </label>
+                                </div>
+                                <div class="radio">
+                                    <label class="orangeL">
+                                        <input type="radio" name="optradio" value="5"> 5 (high recommendation)</label>
+                                </div>
+                            </div>
                         </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optradio" value="2"> 2 </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optradio" value="3"> 3 </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optradio" value="4"> 4 </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optradio" value="5"> 5 (high recommendation)</label>
-                        </div>
-                    </div>
 
-                    <!-- add email to contact user -->
-                    <div class="form-group">
-                        <label for="email-text">Email Address</label>
-                        <input type="text" id="review-email" class="form-control" aria-describedby="email-text" placeholder="-- Your email address --">
-                    </div>
-
-
-                    <form method="post">
-                        <div class="footer">
-                            <button id="cancel-review" type="button" class="btn btn-default btn-danger" data-dismiss="modal">Cancel</button>
-                            <button id="submit-review" type="button" class="btn btn-default btn-success">Submit Review</button>
+                        <!-- add email to contact user -->
+                        <div class="form-group">
+                            <label for="email-text" class="orangeL">Email Address</label>
+                            <input type="text" id="review-email" class="form-control" aria-describedby="email-text" placeholder="-- Your email address --">
                         </div>
+
+
+                        <form method="post">
+                            <div class="footer">
+                                <button id="cancel-review" type="button" class="btn btn-default btn-danger" data-dismiss="modal">Cancel</button>
+                                <button id="submit-review" type="button" class="btn btn-default btn-success">Submit Review</button>
+                            </div>
+                        </form>
+
                     </form>
-
                 </div>
             </div>
         </div>
     </div>
-
 </body>

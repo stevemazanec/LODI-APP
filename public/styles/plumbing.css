@@ -2,6 +2,7 @@
     height: 50px;
     width: 50px;
 }
+
 body {
     background-image: url('/image/windowinstaller7.jpg');
     background-size: 100%;
@@ -27,8 +28,8 @@ body {
 
 .navbar-expand-lg .dropdown-menu {
     width: 50%;
-    margin-left: 50%;
-    background-color: transparent;
+    background-color: orangered;
+    color: darkslategray;
     font-family: 'Chango', cursive;
 }
 
@@ -84,6 +85,8 @@ body {
 }
 
 .table {
+    background-color: darkslategray;
+    color: orangered;
     font-family: 'Chango', cursive;
     width: 100%;
     margin-left: 15%;

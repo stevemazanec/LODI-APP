@@ -370,7 +370,8 @@ body {
 
 .navbar-expand-lg .dropdown-menu {
     width: 50%;
-    background-color: transparent;
+    background-color: orangered;
+    color: darkslategray;
     font-family: 'Chango', cursive;
 }
 
@@ -432,102 +433,3 @@ body {
     white-space: nowrap;
     direction: ltr;
 }
-
-/* ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-} */
-
-/* ul {
-    grid-column: 6;
-    grid-row: 1;
-} */
-
-/*Create a horizontal list with spacing*/
-
-/* 
-li {
-    display: inline;
-    float: right;
-    margin-right: 1px;
-} */
-
-/*Style for menu links*/
-
-/* li a {
-    font-size: 10px;
-    font-family: 'Chango', cursive;
-    border-radius: 50%;
-    display: block;
-    min-width: 50px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: orangered;
-    background: darkslategray;
-    text-decoration: none;
-    z-index: 2;
-} */
-
-/*Hover state for top level links*/
-
-/* li:hover a {
-    background: orangered;
-} */
-
-/*Style for dropdown links*/
-
-/* li:hover ul a {
-    font-family: 'Chango', cursive;
-    background: orangered;
-    color: #2f3036;
-    height: 50px;
-    line-height: 50px;
-    z-index: 2;
-} */
-
-/*Hover state for dropdown links*/
-
-/* 
-li:hover ul a:hover {
-    font-family: 'Chango', cursive;
-    background: orangered;
-    color: darkslategray;
-    z-index: 2;
-} */
-
-/*Hide dropdown links until they are needed*/
-
-/* 
-li ul {
-    display: none;
-    z-index: 2;
-}
-
-/*Make dropdown links vertical*/
-
-/* li ul li {
-    display: -webkit-inline-box;
-    float: right;
-    z-index: 2;
-} */
-
-/*Prevent text wrapping*/
-
-/* li ul li a {
-    width: auto;
-    min-width: 100px;
-    padding: 0px;
-    z-index: 2;
-} */
-
-/*Display the dropdown on hover*/
-
-/*ul li a:hover+.hidden,
-.hidden:hover {
-    display: block;
-    z-index: 2;
-} */

@@ -32,6 +32,7 @@ module.exports = function (app) {
     db.Worker.findAll({}).then(function (dbWorkers) {
       res.render("reviews", {
         pagetitle: "Reviews",
+        css: "review.css",
         js: "review.js",
         workers: dbWorkers
       });
