@@ -1,10 +1,10 @@
 var config = {
-    apiKey: process.env.FIREBASE_KEY,
-    authDomain: process.env.FIREBASE_DOMAIN,
-    databaseURL: process.env.FIREBASE_URL,
-    projectId: process.env.FIREBASE_PROJECT,
-    storageBucket: process.env.FIREBASE_STORAGE,
-    messagingSenderId: process.env.FIREBASE_SENDER
+    apiKey: "AIzaSyBMXLIplpcpZpUw31O-NO_kLj0laQB5_XY",
+    authDomain: "lodi-6b3e8.firebaseapp.com",
+    databaseURL: "https://lodi-6b3e8.firebaseio.com",
+    projectId: "lodi-6b3e8",
+    storageBucket: "lodi-6b3e8.appspot.com",
+    messagingSenderId: "456328491001"
 };
 firebase.initializeApp(config);
 database = firebase.database();
